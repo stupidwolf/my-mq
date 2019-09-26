@@ -1,0 +1,1 @@
+模仿Apache RocketMQ的实现,用于学习使用

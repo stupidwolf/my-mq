@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern><![CDATA[%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{80}.<%M>:%line - %msg%n]]></pattern>
+        </encoder>
+<!--        <layout class="ch.qos.logback.classic.PatternLayout">-->
+<!--            <Pattern><![CDATA[%d{HH:mm:ss.SSS} [%thread] %-5level %logger{80}.<%M>:%line - %msg%n]]></Pattern>-->
+<!--        </layout>-->
+    </appender>
+
+<!--    <logger name="*" level="TRACE"/>-->
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
